@@ -5,7 +5,7 @@ import { FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt, FaCode, FaFacebook, Fa
 const Footer = () => {
   return (
    <div className="h-[510px]">
-    <footer className="bg-black -z-10 fixed bottom-0 left-0  w-full text-gray-300 py-32">
+    <footer className="bg-black z-0 fixed bottom-0 left-0  w-full text-gray-300 py-32">
       <div className="max-width p-4 md:px-12">
         {/* Flexbox Layout */}
         <div className="w-full flex justify-between">

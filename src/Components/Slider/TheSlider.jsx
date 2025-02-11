@@ -24,7 +24,7 @@ function AutoPlay() {
   };
 
   return (
-    <section className="w-full py-5 bg-white">
+    <section className="w-full py-5 bg-white relative z-10">
       <Slider {...settings}>
         {[project1, project2, project3, project4, project5, project6].map(
           (project, index) => (

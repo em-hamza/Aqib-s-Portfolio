@@ -4,7 +4,7 @@ import Service from './Service'
 
 const Services = () => {
     return (
-        <section className='bg-slate-800 pt-16' id='services'>
+        <section className='bg-slate-800 pt-16 relative z-10' id='services'>
             <div className='max-width p-4 '>
                 <SectionHeader
                     section="SERVICES"
