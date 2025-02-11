@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.css'
+import LocomotiveScroll from 'locomotive-scroll';
 import Header from './Components/Header/Header'
 import HeroSec from './Components/Hero-Section/HeroSec'
 import Counts from './Components/Counts/Counts'
@@ -10,6 +11,7 @@ import Testimonials from './Components/Testimonials/Testimonials'
 import Footer from './Components/Footer/Footer'
 
 const App = () => {
+  const locomotiveScroll = new LocomotiveScroll();
   return (
     <div className=''>
       <Header/>
