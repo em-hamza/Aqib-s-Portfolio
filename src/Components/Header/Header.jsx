@@ -1,6 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const Header = () => {
+    const [isVisible, setIsVisible] = useState(true);
+    const prevScrollY = useRef(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            const scrollThreshold = window.innerHeight;
+
+            if (currentScrollY > scrollThreshold) {
+                // Hide header when scrolling down, show when scrolling up
+                const isScrollingDown = currentScrollY > prevScrollY.current;
+                setIsVisible(!isScrollingDown);
+            } else {
+                // Always show header when above 100vh
+                setIsVisible(true);
+            }
+
+            prevScrollY.current = currentScrollY;
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     const handleScroll = (e, targetId) => {
         e.preventDefault();
         const target = document.querySelector(targetId);
@@ -10,8 +34,10 @@ const Header = () => {
     };
 
     return (
-        <section className="sticky top-0 left-0 z-50 bg-black">
-            <header className=" w-full bg-black shadow-lg max-width flex justify-between items-center p-4">
+        <section className={`sticky top-0 left-0 z-50 bg-black transition-transform duration-300 ${
+            !isVisible ? '-translate-y-full' : 'translate-y-0'
+        }`}>
+            <header className="w-full bg-black shadow-lg max-width flex justify-between items-center p-4">
                 <a href="/" className="font-semibold text-2xl tracking-wider text-yellow-500">
                     AQIB
                 </a>
