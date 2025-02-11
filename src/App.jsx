@@ -12,7 +12,7 @@ import Footer from './Components/Footer/Footer'
 const App = () => {
   return (
     <div className=''>
-      <Header />
+      <Header/>
       <HeroSec />
       <Counts />
       <Services />
