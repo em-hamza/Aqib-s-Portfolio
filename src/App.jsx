@@ -11,7 +11,7 @@ import Footer from './Components/Footer/Footer'
 
 const App = () => {
   return (
-    <div className='flex flex-col'>
+    <div className=''>
       <Header />
       <HeroSec />
       <Counts />
