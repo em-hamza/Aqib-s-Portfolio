@@ -22,7 +22,7 @@ const HeroSec = () => {
 
     return (
         <section className='bg-slate-900 relative z-10 ' id='intro'>
-            <div className='relative max-width p-4 flex items-center justify-between overflow-hidden'>
+            <div className='relative max-w-7xl mx-auto p-4 flex items-center justify-between overflow-hidden'>
                 <div className='w-7/12 flex flex-col text-white tracking-wide py-20'>
                     <motion.h2
                         initial={{ opacity: 0 }}

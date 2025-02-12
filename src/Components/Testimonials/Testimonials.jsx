@@ -39,7 +39,7 @@ const Testimonials = () => {
     ];
     return (
         <section className='bg-slate-800 py-10 relative z-10 rounded-b-3xl -top-10' id='testimonial'>
-            <div className='max-width p-4 '>
+            <div className='max-w-7xl mx-auto p-4 '>
                 <SectionHeader
                     section="TESTIMONIAL"
                     title="SUCCESS SPEAKS FOR ITSELF"
