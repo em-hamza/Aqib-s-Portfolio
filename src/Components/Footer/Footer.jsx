@@ -4,13 +4,13 @@ import { FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaSkype } 
 
 const Footer = () => {
   return (
-    <div className="h-screen pt-32" id="footer" >
-      <footer className="bg-black h-screen z-0 fixed bottom-0 left-0  w-full text-gray-300 py-32">
+    <div className="h-screen lg:pt-32" id="contact" >
+      <footer className="bg-black h-screen z-0 fixed bottom-0 left-0  w-full text-gray-300 lg:py-32">
         <div className="max-w-6xl mx-auto p-4 md:px-12">
           {/* Flexbox Layout */}
-          <div className="w-full flex justify-between">
+          <div className="w-full flex lg:flex-row flex-col lg:gap-0 gap-5 justify-between">
             {/* About Section */}
-            <div className="w-4/12">
+            <div className="lg:w-4/12 w-full">
               <h2 className="text-4xl font-bold text-yellow-500">Aqib Ali</h2>
               <p className="text-base text-gray-400 mt-2 leading-6 ">
                 Passionate Web Developer & Designer, crafting modern and responsive web experiences.
@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="w-7/12">
+            <div className="lg:w-7/12 w-full">
               <h3 className="text-xl font-semibold text-white">Get in touch</h3>
               <form className="mt-3 space-y-3">
                 <input type="text" placeholder="Your Name" className="w-full p-2 rounded bg-gray-800 text-white" />

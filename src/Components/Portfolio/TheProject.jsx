@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const TheProject = (props) => {
     return (
-        <div className="relative w-[32%] border border-gray-500 rounded-sm my-1 overflow-hidden group">
+        <div className="relative lg:w-[32%] w-[99%] border border-gray-500 rounded-sm my-1 overflow-hidden group">
             <div className='absolute z-10 w-full h-full bg-black/70 hidden group-hover:flex flex-col justify-between p-2 text-white'>
                 <span>
                     <h4 className='text-sm font-medium tracking-wide'>Website Title</h4>

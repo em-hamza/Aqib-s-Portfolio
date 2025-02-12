@@ -56,7 +56,7 @@ const services = [
 const Card = ({ title, subtitle, description, points, image }) => (
     <div className="relative group h-[410px] rounded-3xl">
         <img
-            className="w-full h-full object-cover object-center rounded-3xl transition-transform duration-1000  grayscale group-hover:scale-110 group-hover:grayscale-0 brightness-50"
+            className="w-full h-full object-cover object-center rounded-3xl transition-transform duration-1000  lg:grayscale group-hover:scale-110 lg:group-hover:grayscale-0 brightness-50"
             src={image}
             alt={title}
         />
@@ -64,12 +64,12 @@ const Card = ({ title, subtitle, description, points, image }) => (
             {/* Left Section */}
             <div className="md:w-1/2 flex flex-col justify-between">
                 <div>
-                    <h2 className="text-3xl font-semibold">{title}</h2>
-                    <p className="text-xl mb-4">{subtitle}</p>
+                    <h2 className="lg:text-3xl text-xl font-semibold">{title}</h2>
+                    <p className="lg:text-xl text-lg mb-5 lg:leading-normal leading-5 lg:mt-0 mt-1">{subtitle}</p>
                 </div>
                 <div>
-                    <p className="text-xl">{description}</p>
-                    <ul className="mt-4 space-y-2 text-lg">
+                    <p className="lg:text-xl text-base lg:leading-normal leading-4">{description}</p>
+                    <ul className="mt-4 space-y-2 lg:text-lg text-sm">
                         {points.map((point, index) => (
                             <li key={index}>✱ {point}</li>
                         ))}

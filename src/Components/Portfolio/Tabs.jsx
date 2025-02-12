@@ -16,7 +16,7 @@ const Tabs = () => {
     const renderContent = () => {
         switch (activeTab) {
             case 'ALL':
-                return <div className='w-full flex items-center justify-center gap-5 flex-wrap'>
+                return <div className='w-full flex  items-center justify-center gap-5 flex-wrap'>
                     <TheProject ProjectImgSrc={img1} />
                     <TheProject ProjectImgSrc={img2} />
                     <TheProject ProjectImgSrc={img3} />
@@ -56,7 +56,7 @@ const Tabs = () => {
                 {['ALL', 'PHOTOGRAPHY', 'DESIGN', 'MOBILE', 'MARKETING'].map((tab) => (
                     <button
                         key={tab}
-                        className={`roboto px-6 py-2 text-sm uppercase tracking-wide transition-all duration-300 
+                        className={`roboto text-[11px] px-1 lg:px-6 lg:py-2 lg:text-sm uppercase tracking-wide transition-all duration-300 
       ${activeTab === tab ? 'border-b-2 border-white text-white font-semibold' : 'border-b-2 border-transparent text-gray-500 hover:text-white'}`}
                         onClick={() => setActiveTab(tab)}
                     >
