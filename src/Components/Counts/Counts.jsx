@@ -9,7 +9,7 @@ const Counts = () => {
     const { ref, inView } = useInView({ triggerOnce: true });
 
     return (
-        <div className='max-w-7xl mx-auto flex items-center justify-center z-20 -top-5 relative' ref={ref}>
+        <div className='max-w-6xl mx-auto flex items-center justify-center z-20 -top-5 relative' ref={ref}>
             <div className='absolute bg-slate-700 flex items-center gap-5 px-16 py-5 rounded-full text-white'>
                 <div className='flex items-center gap-2 w-40'>
                     <span className='bg-yellow-500 rounded-full p-2 '><SlBadge size={20} /></span>

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="h-screen pt-32" id="footer" >
       <footer className="bg-black h-screen z-0 fixed bottom-0 left-0  w-full text-gray-300 py-32">
-        <div className="max-w-7xl mx-auto p-4 md:px-12">
+        <div className="max-w-6xl mx-auto p-4 md:px-12">
           {/* Flexbox Layout */}
           <div className="w-full flex justify-between">
             {/* About Section */}

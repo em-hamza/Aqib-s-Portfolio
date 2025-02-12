@@ -36,7 +36,7 @@ const Header = () => {
     return (
         <section className={`sticky top-0 left-0 z-50 bg-black transition-transform duration-300 ${!isVisible ? '-translate-y-full' : 'translate-y-0'
             }`}>
-            <header className="w-full bg-black shadow-lg max-w-7xl mx-auto flex justify-between items-center p-4">
+            <header className="w-full bg-black shadow-lg max-w-6xl mx-auto flex justify-between items-center p-4">
                 <a href="/" className="font-semibold text-2xl tracking-wider text-yellow-500">
                     AQIB
                 </a>
