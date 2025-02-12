@@ -12,7 +12,7 @@ const Footer = () => {
           {/* About Section */}
           <div className="w-4/12">
             <h2 className="text-4xl font-bold text-yellow-500">Aqib Ali</h2>
-            <p className="text-base text-gray-400 mt-2 leading-6">
+            <p className="text-base text-gray-400 mt-2 leading-6 ">
               Passionate Web Developer & Designer, crafting modern and responsive web experiences.
             </p>
           </div>
