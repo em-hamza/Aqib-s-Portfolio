@@ -34,9 +34,8 @@ const Header = () => {
     };
 
     return (
-        <section className={`sticky top-0 left-0 z-50 bg-black transition-transform duration-300 ${
-            !isVisible ? '-translate-y-full' : 'translate-y-0'
-        }`}>
+        <section className={`sticky top-0 left-0 z-50 bg-black transition-transform duration-300 ${!isVisible ? '-translate-y-full' : 'translate-y-0'
+            }`}>
             <header className="w-full bg-black shadow-lg max-width flex justify-between items-center p-4">
                 <a href="/" className="font-semibold text-2xl tracking-wider text-yellow-500">
                     AQIB
@@ -55,10 +54,11 @@ const Header = () => {
                         Testimonial
                     </a>
                     <a
-                        href="/"
+                        href="#footer"
                         className="relative w-fit px-5 py-1 overflow-hidden border border-yellow-500 rounded-full transition-all 
                         before:absolute before:top-0 before:left-0 before:right-0 before:z-0 before:h-full before:w-0 
                         before:bg-yellow-500 before:transition-all before:duration-500 hover:text-black hover:before:left-0 hover:before:w-full"
+                        onClick={(e) => handleScroll(e, '#footer')}
                     >
                         <span className="relative z-10 tracking-wide font-medium">Contact</span>
                     </a>

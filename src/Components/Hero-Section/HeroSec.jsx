@@ -24,7 +24,11 @@ const HeroSec = () => {
         <section className='bg-slate-900 relative z-10 ' id='intro'>
             <div className='relative max-width p-4 flex items-center justify-between overflow-hidden'>
                 <div className='w-7/12 flex flex-col text-white tracking-wide py-20'>
-                    <h2 className='text-xl font-semibold'>Hi there,</h2>
+                    <motion.h2
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, ease: "easeInOut" }}
+                        className='text-xl font-semibold'>Hi there,</motion.h2>
                     <motion.h1
                         className='text-yellow-500 text-4xl font-semibold tracking-[-4px]'
                         variants={containerVariants}
@@ -38,7 +42,13 @@ const HeroSec = () => {
                         ))}
                     </motion.h1>
 
-                    <p className='text-lg font-light  pt-5'>I'm a professional web developer and UI/UX designer with a passion for designing and developing beautiful and functional user experiences.</p>
+                    <motion.p
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, ease: "easeInOut" }}
+                        className='text-lg font-light  pt-5'>
+                        I'm a professional web developer and UI/UX designer with a passion for designing and developing beautiful and functional user experiences.
+                    </motion.p>
 
                     <div className='flex items-center gap-5 text-white my-5'>
                         <a href="" class="relative inline-flex items-center justify-center transition-all duration-700 border border-white hover:border-yellow-500 p-1 rounded-full overflow-hidden group ">
