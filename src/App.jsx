@@ -13,7 +13,7 @@ import Footer from './Components/Footer/Footer'
 const App = () => {
   const locomotiveScroll = new LocomotiveScroll();
   return (
-    <div className=''>
+    <div className='bg-slate-900'>
       <Header/>
       <HeroSec />
       <Counts />

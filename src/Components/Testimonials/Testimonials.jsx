@@ -38,7 +38,7 @@ const Testimonials = () => {
         { id: 15, image: img_15, height: 200 },
     ];
     return (
-        <section className='bg-slate-800 py-10 relative z-10 rounded-b-4xl' id='testimonial'>
+        <section className='bg-slate-800 py-10 relative z-10 rounded-b-3xl -top-10' id='testimonial'>
             <div className='max-width p-4 '>
                 <SectionHeader
                     section="TESTIMONIAL"

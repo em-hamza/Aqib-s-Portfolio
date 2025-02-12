@@ -21,7 +21,7 @@ const HeroSec = () => {
     };
 
     return (
-        <section className='bg-slate-900 relative z-10' id='intro'>
+        <section className='bg-slate-900 relative z-10 ' id='intro'>
             <div className='relative max-width p-4 flex items-center justify-between overflow-hidden'>
                 <div className='w-7/12 flex flex-col text-white tracking-wide py-20'>
                     <h2 className='text-xl font-semibold'>Hi there,</h2>
